@@ -1,0 +1,15 @@
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\Classlab.csproj.AssemblyReference.cache
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\Classlab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\Classlab.AssemblyInfoInputs.cache
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\Classlab.AssemblyInfo.cs
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\Classlab.csproj.CoreCompileInputs.cache
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\bin\Debug\net6.0\Classlab.exe
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\bin\Debug\net6.0\Classlab.deps.json
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\bin\Debug\net6.0\Classlab.runtimeconfig.json
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\bin\Debug\net6.0\Classlab.dll
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\bin\Debug\net6.0\Classlab.pdb
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\Classlab.dll
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\refint\Classlab.dll
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\Classlab.pdb
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\Classlab.genruntimeconfig.cache
+C:\Users\jonas\OneDrive\Documents\Dev\csharp\ws1\Classlab\Classlab\obj\Debug\net6.0\ref\Classlab.dll
