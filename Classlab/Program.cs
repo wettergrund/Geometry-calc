@@ -86,13 +86,19 @@
             }
 
             static void calcRightTriangle() {
-                Console.Clear();
+                
+
+                printTriangle();
 
                 Console.Write("Ange katet A --> ");
 
                 int legA;
                 int legB;
                 bool res;
+
+                
+
+                
 
                 string? stringA = Console.ReadLine();
                 res = int.TryParse(stringA, out legA);
@@ -103,7 +109,11 @@
                     calcRightTriangle();
                 }
 
+                printTriangle();
+
                 Console.Write("Ange katet B --> ");
+
+
                 string? stringB = Console.ReadLine();
                 res = int.TryParse(stringB, out legB);
                 if (!res)
@@ -114,13 +124,61 @@
                 }
 
                 Triangle tri1 = new Triangle(legA, legB);
-
+                printTriangle(stringA, stringB, tri1.getHypo());
                 Console.WriteLine(" ");
                 Console.WriteLine("╔═══════════════════════════════╗");
                 Console.WriteLine("║Hypotenusan (rätsidig triangel)║");
                 Console.WriteLine("╚═══════════════════════════════╝");
                 Console.WriteLine($"En rätvinklig triangel med katet A {tri1.Opposite}cm och katet B {tri1.Adjacent}cm har en hypotenusan på {tri1.getHypo()}cm");
                 Console.ReadLine();
+
+                static void printTriangle(string a = "A", string b = "B", double tril = 0)
+                {
+                    Console.Clear();
+
+                    decimal objSize = 15;
+                    decimal halfSize = Math.Floor(objSize / 2);
+
+                    for (int i = 0; i < objSize; i++)
+                    {
+                        if (i != halfSize)
+                        {
+                            Console.Write("║");
+                        }
+                        else
+                        {
+                            Console.Write(b);
+                        }
+
+
+
+                        for (int j = 1; j <= i; j++)
+                        {
+                            Console.Write(" *");
+                        }
+                        if (i == halfSize && b != "B")
+                        {
+                            Console.Write($"  {tril}");
+                        }
+
+                        Console.WriteLine();
+                    }
+
+                    Console.Write("╚");
+                    for (int j = 0; j < objSize; j++)
+                    {
+                        if (j != halfSize)
+                        {
+                            Console.Write("══");
+                        }
+                        else
+                        {
+                            Console.Write(a);
+                        }
+
+                    }
+                    Console.WriteLine();
+                }
 
             }
             Console.Clear();
@@ -129,6 +187,8 @@
 
 
         }
+
+        
     }
 
     public class Circle
@@ -205,6 +265,9 @@
             return Math.Round(c, 2);
         }
     }
+
+
+
 }
 
 
