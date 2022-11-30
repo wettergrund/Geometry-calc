@@ -1,3 +1,3 @@
-# Geometry-calc
+# Geometry calculator
 
-![image](https://user-images.githubusercontent.com/50584818/204862403-ae948a4b-dde6-4110-90ca-ebdf65d23c76.png)
+![image](https://user-images.githubusercontent.com/50584818/204887698-0cc8de40-5668-4195-8373-c1487879ad53.png)
