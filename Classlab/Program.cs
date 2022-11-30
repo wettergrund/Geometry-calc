@@ -129,7 +129,7 @@
                 Console.WriteLine("╔═══════════════════════════════╗");
                 Console.WriteLine("║Hypotenusan (rätsidig triangel)║");
                 Console.WriteLine("╚═══════════════════════════════╝");
-                Console.WriteLine($"En rätvinklig triangel med katet A {tri1.Opposite}cm och katet B {tri1.Adjacent}cm har en hypotenusa på {tri1.getHypo()}cm");
+                Console.WriteLine($"Katet A: {tri1.Opposite}cm\nKatet B: {tri1.Adjacent}cm\n===\nHypotenusa: {tri1.getHypo()}cm");
                 Console.ReadLine();
 
                 static void printTriangle(string a = "A", string b = "B", double tril = 0)
@@ -161,10 +161,13 @@
                         {
                             Console.Write($"  {tril}");
                         }
+                        else
+                        {
+                            Console.Write(".");
+                        }
 
                         Console.WriteLine();
                     }
-
                     Console.Write("╚");
                     for (int j = 0; j < objSize; j++)
                     {
