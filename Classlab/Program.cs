@@ -13,10 +13,7 @@
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
 
                 Console.Clear();
-
-                Console.WriteLine("╔═══════════════════════╗");
-                Console.WriteLine("║Välj geometrikalkylator║");
-                Console.WriteLine("╚═══════════════════════╝");
+                Console.WriteLine(generateBox("Välj geometrikalkylator"));
                 Console.WriteLine("1: Cirkel");
                 Console.WriteLine("2: Rätviklig triangel");
                 Console.WriteLine("");
@@ -61,7 +58,7 @@
 
                 string? myRadius = Console.ReadLine();
                 res = int.TryParse(myRadius, out radAnswer);
-
+                
                 if (!res)
                 {
                     Console.WriteLine("Nu blev det fel");
@@ -71,14 +68,15 @@
 
                 Circle myCircle = new Circle(radAnswer);
 
-                Console.WriteLine("╔═══════════╗");
-                Console.WriteLine("║Area cirkel║");
-                Console.WriteLine("╚═══════════╝");
+
+    
+                Console.WriteLine(generateBox("Area cirkel"));
+
+               
+
                 Console.WriteLine($"Cirkel med radien {myCircle.Radius}cm har en area på {myCircle.getArea()}cm");
                 Console.WriteLine(" ");
-                Console.WriteLine("╔══════════════╗");
-                Console.WriteLine("║Omkrets cirkel║");
-                Console.WriteLine("╚══════════════╝");
+                Console.WriteLine(generateBox("Omkrets cirkel"));
                 Console.WriteLine($"Cirkel med radien {myCircle.Radius}cm har en omkrets på {myCircle.getCirc()}cm");
                 Console.ReadLine();
                 return;
@@ -126,9 +124,7 @@
                 Triangle tri1 = new Triangle(legA, legB);
                 printTriangle(stringA, stringB, tri1.getHypo());
                 Console.WriteLine(" ");
-                Console.WriteLine("╔═══════════════════════════════╗");
-                Console.WriteLine("║Hypotenusan (rätsidig triangel)║");
-                Console.WriteLine("╚═══════════════════════════════╝");
+                Console.WriteLine(generateBox("Hypotenusan (rätsidig triangel)"));
                 Console.WriteLine($"Katet A: {tri1.Opposite}cm\nKatet B: {tri1.Adjacent}cm\n===\nHypotenusa: {tri1.getHypo()}cm");
                 Console.ReadLine();
 
@@ -188,6 +184,36 @@
             Console.Clear();
             Console.Write("Programmet kommer nu stänkas ner");
             Thread.Sleep(1000);
+
+
+
+            static string generateBox(string text)
+            {
+                int strLength = text.Length;
+
+                string result = "";
+                //topp
+                result += "╔";
+                for (int i = 0; i < strLength; i++)
+                {
+                    result += "═";
+                }
+                result += "╗\n";
+                //text
+                result += "║";
+                result += text;
+                result += "║\n";
+                //bottom
+                result += "╚";
+                for (int i = 0; i < strLength; i++)
+                {
+                    result += "═";
+                }
+                result += "╝";
+
+                return result;
+
+            }
 
 
         }
