@@ -51,11 +51,6 @@
 
             }
 
-
-
-
-
-
             static void calcCircle() {
                 Console.Clear();
 
@@ -120,15 +115,12 @@
 
                 Triangle tri1 = new Triangle(legA, legB);
 
-
-
                 Console.WriteLine(" ");
                 Console.WriteLine("╔═══════════════════════════════╗");
                 Console.WriteLine("║Hypotenusan (rätsidig triangel)║");
                 Console.WriteLine("╚═══════════════════════════════╝");
                 Console.WriteLine($"En rätvinklig triangel med katet A {tri1.Opposite}cm och katet B {tri1.Adjacent}cm har en hypotenusan på {tri1.getHypo()}cm");
                 Console.ReadLine();
-
 
             }
             Console.Clear();
@@ -209,7 +201,6 @@
         {
             double ab = (_a * _a) + (_b * _b);
             double c = Math.Sqrt(ab);
-
             
             return Math.Round(c, 2);
         }
