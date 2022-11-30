@@ -129,12 +129,13 @@
                 Console.WriteLine("╔═══════════════════════════════╗");
                 Console.WriteLine("║Hypotenusan (rätsidig triangel)║");
                 Console.WriteLine("╚═══════════════════════════════╝");
-                Console.WriteLine($"En rätvinklig triangel med katet A {tri1.Opposite}cm och katet B {tri1.Adjacent}cm har en hypotenusan på {tri1.getHypo()}cm");
+                Console.WriteLine($"En rätvinklig triangel med katet A {tri1.Opposite}cm och katet B {tri1.Adjacent}cm har en hypotenusa på {tri1.getHypo()}cm");
                 Console.ReadLine();
 
                 static void printTriangle(string a = "A", string b = "B", double tril = 0)
                 {
                     Console.Clear();
+                    Console.WriteLine("");
 
                     decimal objSize = 15;
                     decimal halfSize = Math.Floor(objSize / 2);
